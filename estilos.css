@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background-color: rgb(13, 29, 17);
+}
+
+header{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    position: relative;
+    top: 11px;
+    align-self: center;
+    color: white;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.caravan{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    right: 545px;
+    top: 100px;
+}
+
+.caravan:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 30px;
+}
+
+.form input{
+    font-family: 'Lato', sans-serif;
+    width: 400px;
+    height: 30px;
+    padding: 15px;
+    outline: none;
+}
+
+.data-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+    position: absolute;
+    top: 250px;
+}
+
+.actor-img{
+    width: 190px;
+    height: 250px;
+}
+
+.overview{
+    font-family: 'Mukta', sans-serif;
+    position: relative;
+    bottom: 141px;
+    width: 100%;
+    height: 55%;
+    color: white;
+    background-color: rgb(36, 35, 35);
+    filter: opacity(0.8);
+    padding: 5px;
+    text-align: center;
+    transform: translateY(100%);
+    display: none;
+}
+
+
+.actor-img:hover > .overview{
+    transform: translateY(0);
+    display: block;
+}
+
+
+h1{
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+    border-bottom: 2px solid white;
+}
+
+h3{
+    margin-top: 0px;
+    font-size: 13px;
+}
+
+
+footer{
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 20px;
+}
+
+footer h3{
+    font-size: 11px;
+    filter: opacity(.8);
+}
+
+
+.vermas-btn{
+    border-radius: 10px;
+    width: 70px;
+    font-size: 15px;
+    margin: 1px;
+    padding: 4px;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    position: absolute;
+    top: 210px;
+    right: 260px;
+}
+
+.vermas-btn:hover{
+    background-color: rgb(3, 17, 3);
+}
+
+@media screen and (max-width: 468px){
+    .actor-img{
+        width: 110px;
+        height: 130px;
+    }
+
+    .data-container{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        gap: 6px;
+        position: absolute;
+        top: 200px;
+        left: 30px;
+    }
+
+    .overview{
+        position: relative;
+        bottom: 107px;
+        width: 100%;
+        height: 81%;
+        padding: 7px;
+        text-align: center;
+        transform: translateY(100%);
+        display: none;
+    }
+
+    h1{
+        font-size: 11px;
+    }
+
+    h3{
+        font-size: 8px;
+    }
+
+    footer h3{
+        font-size: 6px;
+    }
+
+    footer{
+        right: -10px;
+    }
+
+    .caravan{
+        right: 85px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .vermas-btn{
+        border-radius: 10px;
+        width: 70px;
+        font-size: 13px;
+        padding: 2px;
+        background-color: rgb(24, 22, 22);
+        color: white;
+        position: absolute;
+        top: 170px;
+        right: 315px;
+    }
+    
+}
+
+
